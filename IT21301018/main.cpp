@@ -1,7 +1,12 @@
-#include <iostream>
+#include<iostream>
 #include<cstring>
-#include "Donation.h"
+
 #include "Registered_User.h"
+#include "Service.h"
+#include "reservation.h"
+#include "Feedback.h"
+#include"Donation.h"
+
 
 #define SIZE 4;
 using namespace std;
@@ -10,26 +15,39 @@ class Donation;
 
 int main()
 {
-	Registered_User *RegUser1, *RegUser2, *RegUser3, *RegUser4;
-  RegUser1= new ;
+	Registered_User *RegUser1;
+  RegUser1= new Registered_User;
+  Registered_User *RegUser2;
+  RegUser2= new Registered_User;
+  Registered_User *RegUser3;
+  RegUser3= new Registered_User;
+  Registered_User *RegUser4;
+  RegUser4= new Registered_User;
   
-	Donation *d1,*d2,*d3,*d4;
+	Donation *d1;
+  d1= new Donation;
+  Donation *d2;
+  d2= new Donation;
+  Donation *d3;
+  d3= new Donation;
+  Donation *d4;
+  d4= new Donation;
 
 
-	RegUser1->SetDetails("U00001", "Saman Edidrimuni", "saman2001@gmail.com");
+	RegUser1->SetDetails();
 
-	RegUser2->SetDetails("U00002", "ishmath khan", "ishnmath@gmail.com");
+	RegUser2->SetDetails();
 
-	RegUser3->SetDetails("U00003", "Avishka sandamaal", "Avishka@gmail.com");
+	RegUser3->SetDetails();
 
-	RegUser4->SetDetails("U00004", "Gihan imalsha", "gihanrox@gmail.com");
+	RegUser4->SetDetails();
 
 	
 
-	d1->setDetails("D00001", "11/06/2022", 2500.00);
-	d2->setDetails("D00002", "08/04/2022", 4400.00);
-	d3->setDetails("D00003", "12/06/2022", 5200.00);
-	d4->setDetails("D00004", "15/08/2022", 3000.00);;
+	d1->setDetails();
+	d2->setDetails();
+	d3->setDetails();
+	d4->setDetails();;
 
 	RegUser1->DisplayDetails();
 	d1->displayDetails();
@@ -41,64 +59,78 @@ int main()
 	d4->displayDetails();
 
   delete d1,d2,d3,d4;
-  delete RegUser1,RegUser2,RegUser3,RegUser4;
+  
 
   //feedback
-  Registered_User RegUser1, RegUser2, RegUser3, RegUser4;
-	Feedback f1, f2, f3, f4;
+  
+	Feedback *f1;
+  f1=new Feedback;
+  Feedback *f2;
+  f2=new Feedback;
+  Feedback *f3;
+  f3=new Feedback;
+  Feedback *f4;
+  f4=new Feedback;
 
 
-	RegUser1->SetDetails("U00001", "Saman Edidrimuni", "saman2001@gmail.com");
-
-	RegUser2->SetDetails("U00002", "ishmath khan", "ishnmath@gmail.com");
-
-	RegUser3->SetDetails("U00003", "Avishka sandamaal", "Avishka@gmail.com");
-
-	RegUser4->SetDetails("U00004", "Gihan imalsha", "gihanrox@gmail.com");
-
-
-
-	cout << "-----------------------------REGISTERED USERS---------------------------" << endl << endl;
-
-
-
-	f1->setDetails("F00001", "good", "The customer service was really great");
-	f2->setDetails("F00002", "satisfied", "There was a minor delay but the service was good");
-	f3->setDetails("F00003", "very good", "This is the best pet care system I recommend anyone to use");
-	f4->setDetails("F00004", "poor", "We are not satisfied with your service , we were unable to get an appointment on the day we wanted");
+	f1->setDetails();
+	f2->setDetails();
+	f3->setDetails();
+	f4->setDetails();
 
 	RegUser1->DisplayDetails();
 	f1->displayDetails();
-	RegUser2.DisplayDetails();
-	f2.displayDetails();
-	RegUser3.DisplayDetails();
-	f3.displayDetails();
-	RegUser4.DisplayDetails();
-	f4.displayDetails();
-
+	RegUser2->DisplayDetails();
+	f2->displayDetails();
+	RegUser3->DisplayDetails();
+	f3->displayDetails();
+	RegUser4->DisplayDetails();
+	f4->displayDetails();
+  
+delete RegUser1,RegUser2,RegUser3,RegUser4;
+delete f1,f2,f3,f4;
+  
   //reservations-services
-  reservation r1, r2, r3, r4;
-    r1.setDetails("R000001", "15:30:59", "09-05-2022");
-    r2.setDetails("R000002", "16:30:59", "11-05-2022", );
-    r3.setDetails("R000003", "19:30:59", "15-05-2022", );
-    r4.setDetails("R000004", "08:30:59", "16-05-2022", );
+  reservation *r1;
+  r1=new reservation;
+  reservation *r2;
+  r2=new reservation;
+  reservation *r3;
+  r3=new reservation;
+  reservation *r4;
+  r4=new reservation;
+  
+    r1->setDetails();
+    r2->setDetails( );
+    r3->setDetails( );
+    r4->setDetails( );
 
-    Service s1, s2, s3, s4;
+    Service *s1;
+    s1= new Service;
+   Service *s2;
+    s2= new Service;
+   Service *s3;
+    s3= new Service;
+   Service *s4;
+    s4= new Service;
+  
 
-    s1.setDetails("S0001", "Pet health care", "Pet Vaccination", 2500);
-    s2.setDetails("S0002", "Pet clinic service", "blood Test", 4000);
-    s3.setDetails("S0003", "Pet clinic service", "Pet Consultancy", 1750);
-    s4.setDetails("S0004", "Pet Body chekup", "Dermatology And Cytology Examination", 8000);
+    s1->setDetails();
+    s2->setDetails();
+    s3->setDetails();
+    s4->setDetails();
 
-    r1.displayDetails();
-    s1.displayDetails();
-    r2.displayDetails();
-    s2.displayDetails();
-    r3.displayDetails();
-    s3.displayDetails();
-    r4.displayDetails();
-    s4.displayDetails();
+    r1->displayDetails();
+    s1->displayDetails();
+    r2->displayDetails();
+    s2->displayDetails();
+    r3->displayDetails();
+    s3->displayDetails();
+    r4->displayDetails();
+    s4->displayDetails();
 
+  delete r1,r2,r3,r4;
+  delete s1,s2,s3,s4;
 
 	return 0;
 }

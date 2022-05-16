@@ -2,15 +2,14 @@
 #include<iostream>
 using namespace std;
 #include"Service.h"
+
 Service::Service() {
-    strcpy_s(serviceId, "0");
-    strcpy_s(serviceType, "");
+    strcpy(serviceId, "0");
+    strcpy(serviceType, "");
 }
 void Service::setDetails(char id[], char type[]) {
-    strcpy_s(serviceId,id);
-    strcpy_s(serviceType,type);
+    strcpy(serviceId,id);
+    strcpy(serviceType,type);
 }
 void Service::displayDetails() {
-    cout << "Service Id : " << serviceId << endl;
-    cout << "Service Type : " << serviceType << endl;
-}
+  }

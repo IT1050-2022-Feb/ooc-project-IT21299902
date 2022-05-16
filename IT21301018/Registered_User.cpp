@@ -28,13 +28,6 @@ void Registered_User::SetDetails(const char u_UserId[], const char u_UserName[],
 
 void Registered_User::DisplayDetails() {
 
-	cout << endl << "----------------------------------------------------------------------------------" << endl;
-	cout << "User ID   -->" << userId << endl;
-	cout << "Name      -->" << name << endl;
-	cout << "Email     -->" << Email << endl;
-
-	cout << "----------------------------------------------------------------------------------" << endl;
-
 
 }
 

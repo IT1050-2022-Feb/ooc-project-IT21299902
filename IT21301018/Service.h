@@ -1,5 +1,4 @@
-#ifndef SERV
-#define SERV
+
 #include"reservations.h"
 class Service {
 private:
@@ -11,4 +10,3 @@ public:
     void setDetails(char id[], char type[]);
     void displayDetails();
 };
-#endif

@@ -1,8 +1,7 @@
-#ifndef REGUSER
-#define REGUSER
 #include"Donation.h"
 #include"Feedback.h"
 class Donation;
+class Feedback;
 class Registered_User {
 
 
@@ -11,6 +10,7 @@ private:
 	char name[40];
 	char Email[60];
 	Donation*donation[4];
+  Feedback*feedback[4];
 
 public:
 	Registered_User();
@@ -18,4 +18,3 @@ public:
 	void DisplayDetails();
 
 };
-#endif

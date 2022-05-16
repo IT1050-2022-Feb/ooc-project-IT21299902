@@ -11,6 +11,7 @@ protected:
 
 public:
 	User(); //default constructor
-	void SetDetails1(const char U_name[], const char u_Tp_NO[],const char u_Email[] , const char u_Address[], const char u_DOB[]); //parameterized constrcutor
+	void SetDetails1(const char U_name[], const char u_Tp_NO[],const char u_Email[] , const char u_Address[], const char u_DOB[]); 
+//display function
 	void DisplayUserDetails();
 };

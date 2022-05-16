@@ -1,5 +1,4 @@
-#ifndef RESERV
-#define RESERV
+
 #include"Service.h"
 
 class reservation {
@@ -13,4 +12,3 @@ public:
     void setDetails(const char newreservationID[], const char newreservation_Time[], const char newreservation_Date[] );
     void displayDetails();
 };
-#endif
